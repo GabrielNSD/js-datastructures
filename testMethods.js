@@ -1,32 +1,32 @@
-import Stack from "./StackArray.js";
-import Queue from "./Queue.js";
+import LinkedList from "./LinkedList/LinkedList.js";
+import Queue from "./QueueAndDecks/Queue.js";
+import Stack from "./Stack/StackArray";
+
 
 // Testing Stack
 
-console.log("Testing Stack based in Array")
-const stack = new Stack()
-console.log(stack.isEmpty())  // true
+console.log("Testing Stack based in Array");
+const stack = new Stack();
+console.log(stack.isEmpty()); // true
 
-stack.push(10)
-stack.push(9)
+stack.push(10);
+stack.push(9);
 
-console.log(stack.peek())  // 9
+console.log(stack.peek()); // 9
 
-stack.push(15)
-console.log(stack.size()) // 3
-console.log(stack.isEmpty()) //false
+stack.push(15);
+console.log(stack.size()); // 3
+console.log(stack.isEmpty()); //false
 
-stack.push(20)
+stack.push(20);
 
-stack.pop()
-stack.pop()
-console.log(stack.size()) // 2
-
-
+stack.pop();
+stack.pop();
+console.log(stack.size()); // 2
 
 //Testing Queue
 
-console.log("Testing Queue")
+console.log("Testing Queue");
 const queue = new Queue();
 console.log(queue.isEmpty()); //true
 
@@ -42,3 +42,9 @@ console.log(queue.isEmpty());
 queue.dequeue();
 queue.dequeue();
 console.log(queue.toString());
+
+//Testing LinkdeLists
+
+const list = new LinkedList();
+list.push(15);
+list.push(10);
